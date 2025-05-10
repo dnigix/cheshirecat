@@ -1,88 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheshire Cat</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!-- MathJax for LaTeX support -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-                inlineMath: [['$','$'], ['\\(','\\)']],
-                displayMath: [['$$','$$'], ['\\[','\\]']],
-                processEscapes: true
-            }
-        });
-    </script>
-    <style>
-        body {
-            font-family: serif;
-            max-width: 800px;
-            margin: 2em auto;
-            padding: 0 1em;
-            line-height: 1.5;
-        }
-        
-        .navigation {
-            margin-bottom: 2em;
-        }
-        
-        h1 {
-            font-size: 1.8em;
-            margin-bottom: 0.5em;
-        }
-        
-        .image-container {
-            margin: 2em 0;
-        }
-        
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheshire Cat</title>
+<link rel="stylesheet" href="css/style.css">
+<!-- MathJax for LaTeX support -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+inlineMath: [['$','$'], ['\\(','\\)']],
+displayMath: [['$$','$$'], ['\\[','\\]']],
+processEscapes: true
+}
+});
+</script>
+<style>
+body {
+    font-family: serif;
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 0 1em;
+    line-height: 1.5;
+}
+.navigation {
+    margin-bottom: 2em;
+}
+h1, h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-content {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 20px;
+}
+.image-container {
+    width: 300px;
+    margin-top: 3em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+ul {
+    padding-left: 20px; /* Reduced from default */
+}
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+    .image-container {
+        width: 100%;
+        margin-top: 1em;
+    }
+}
+</style>
 </head>
 <body>
-    <div class="navigation">
-        [<a href="#home">Home</a>]
-        [<a href="#about">Math projects</a>]
-        [<a href="#notes">Writing</a>]
-        [<a href="#bookshelf">Bookshelf</a>]
-        [<a href="#contact">Contact</a>]
+<div class="navigation">
+ [<a href="#home">Home</a>]
+ [<a href="#about">Math projects</a>]
+ [<a href="#notes">Writing</a>]
+ [<a href="#bookshelf">Bookshelf</a>]
+ [<a href="#contact">Contact</a>]
+</div>
+
+<div class="content-container">
+    <div class="text-content">
+        <h3>Hi! I'm broadly interested in:</h3>
+        <ul>
+            <li>Simplicity and beauty</li>
+            <li>Understanding fundamental systems, especially physics, molecular biology, neuroscience, ghosts in the shell</li>
+            <li>Pathological visualisation</li>
+            <li>Algebraic topology, differential geometry, complex analysis and enumerative combinatorics</li>
+            <li>Solving physics with artificial scientists</li>
+            <li>Computational models of the mind</li>
+            <li>Modernist literature, especially <i>The Gift</i> and everything Nabokov wrote before <i>Ada</i></li>
+            <li>David Foster Wallace's essays (especially on tennis and <i>E Unibus Pluram</i>)</li>
+            <li>Building robust epistemics</li>
+            <li><i>Samurai Champloo</i> and <i>Vagabond</i></li>
+            <li>Bach's fugues</li>
+            <li>Decreasing pDoom</li>
+            <li>Shigaraki pottery</li>
+            <li>Rock gardens</li>
+            <li>Rinzai Zen</li>
+        </ul>
+        <p>
+            If you have any suggestions for books, movies, or music you think I should check out or you just want to chat, email me - I want to meet as many cool people as possible, and I want to use my time on Earth to learn as much as I can.
+        </p>
     </div>
     
-    <h3>Hi! I'm broadly interested in:</h3>
-    <ul>
-        <li>Simplicity and beauty</li>
-        <li>Understanding fundamental systems, especially physics, molecular biology, neuroscience, ghosts in the shell</li>
-        <li>Pathological visualisation</li>
-        <li>Algebraic topology, differential geometry, complex analysis and enumerative combinatorics</li>
-        <li>Solving physics with artificial scientists</li>
-        <li>Computational models of the mind</li>
-        <li>Modernist literature, especially <i>The Gift</i> and everything Nabokov wrote before <i>Ada</i></li>
-        <li>David Foster Wallace's essays (especially on tennis and <i>E Unibus Pluram</i>)</li>
-        <li>Building robust epistemics</li>
-        <li><i>Samurai Champloo</i> and <i>Vagabond</i></li>
-        <li>Bach's fugues</li>
-        <li>Decreasing pDoom</li>
-        <li>Shigaraki pottery</li>
-        <li>Rock gardens</li>
-        <li>Rinzai Zen</li>
-    </ul>
-
-    <p>
-        If you have any suggestions for books, movies, or music you think I should check out or you just want to chat, email me - I want to meet as many cool people as possible, and I want to use my time on Earth to learn as much as I can.
-    </p>
-
-
-
     <div class="image-container">
         <img src="images/cheshiresmile.png" alt="Cheshire smile">
     </div>
-    
-    <!-- You can include LaTeX examples here -->
-
+</div>
+<!-- You can include LaTeX examples here -->
 </body>
 </html>
