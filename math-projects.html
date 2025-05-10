@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Math Projects | Cheshire Cat</title>
+<link rel="stylesheet" href="css/style.css">
+<!-- MathJax for LaTeX support -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+inlineMath: [['$','$'], ['\\(','\\)']],
+displayMath: [['$$','$$'], ['\\[','\\]']],
+processEscapes: true
+}
+});
+</script>
+<style>
+body {
+    font-family: serif;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+    line-height: 1.4;
+}
+.navigation {
+    margin-bottom: 2em;
+}
+.blog-post {
+    margin-bottom: 4em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2em;
+}
+.post-title {
+    font-size: 1.8em;
+    margin-bottom: 0.2em;
+}
+.post-date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 1em;
+}
+.post-content {
+    margin-top: 1em;
+}
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+.permalink {
+    font-size: 0.9em;
+    color: #999;
+    text-decoration: none;
+}
+.permalink:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div class="navigation">
+ [<a href="index.html">Home</a>]
+ [<a href="math-projects.html">Math projects</a>]
+ [<a href="writing.html">Writing</a>]
+ [<a href="bookshelf.html">Bookshelf</a>]
+ [<a href="#contact">Contact</a>]
+</div>
+
+<div class="blog-container">
+    <!-- Example post - replace with your content -->
+    <article class="blog-post">
+        <h2 class="post-title">Example Mathematics Post</h2>
+        <div class="post-date">May 10, 2025</div>
+        <div class="post-content">
+            <p>This is an example post where you can paste your LaTeX content. MathJax will render it properly.</p>
+            
+            <p>Here's an example of an inline equation: $e^{i\pi} + 1 = 0$</p>
+            
+            <p>And a display equation:</p>
+            
+            <p>$$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$</p>
+            
+            <p>You can also include images:</p>
+            
+            <img src="images/sample-math-diagram.png" alt="Sample mathematical diagram">
+            
+            <p>Continue with more mathematical content...</p>
+        </div>
+        <a href="#" class="permalink">permalink</a>
+    </article>
+    
+    <!-- Add more posts here -->
+    <article class="blog-post">
+        <h2 class="post-title">Another Mathematics Post</h2>
+        <div class="post-date">May 8, 2025</div>
+        <div class="post-content">
+            <p>You can copy and paste your LaTeX content here, and it will be rendered properly.</p>
+            
+            <p>For example, the Dirac equation:</p>
+            
+            <p>$$(i\hbar \gamma^\mu \partial_\mu - mc)\psi = 0$$</p>
+        </div>
+        <a href="#" class="permalink">permalink</a>
+    </article>
+</div>
+</body>
+</html>
