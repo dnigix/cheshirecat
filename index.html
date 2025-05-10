@@ -19,10 +19,10 @@ processEscapes: true
 <style>
 body {
     font-family: serif;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 2em auto;
     padding: 0 1em;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 .navigation {
     margin-bottom: 2em;
@@ -31,56 +31,25 @@ h3 {
     font-size: 1.8em;
     margin-bottom: 0.5em;
 }
-.main-container {
-    display: flex;
-    align-items: flex-end; /* Align items to bottom */
-    gap: 40px;
-}
 .text-content {
-    flex: 1;
-    /* No max-width here to allow the text to adjust based on image size */
+    margin-bottom: 2em;
 }
 .image-container {
-    flex: 0 0 auto;
-    /* No width constraints here to maintain original image size */
-    align-self: flex-end; /* Align to bottom */
-    margin-bottom: 30px; /* Space from bottom */
+    text-align: center;
+    margin: 2em auto;
+    max-width: 600px; /* Maintain original size */
 }
 img {
-    /* No max-width to ensure original size */
+    max-width: 100%;
+    height: auto;
     display: block;
-    width: auto; /* Ensures the image keeps its original width */
-    height: auto; /* Maintains aspect ratio */
+    margin: 0 auto;
 }
 ul {
-    padding-left: 20px;
-    margin-top: 20px;
+    padding-left: 25px;
 }
 li {
-    margin-bottom: 2px; /* Reduced from 5px */
-    list-style-type: disc;
-    line-height: 1.3; /* Tighter line spacing */
-}
-p {
-    margin-top: 15px;
-}
-.contact-info {
-    margin-top: 15px;
-}
-.footnote {
-    font-size: 0.9em;
-    margin-top: 15px;
-}
-@media (max-width: 768px) {
-    .main-container {
-        flex-direction: column;
-    }
-    .image-container {
-        margin-top: 20px;
-    }
-    img {
-        max-width: 100%; /* Only constrain width on mobile */
-    }
+    margin-bottom: 5px;
 }
 </style>
 </head>
@@ -93,39 +62,33 @@ p {
  [<a href="#contact">Contact</a>]
 </div>
 
-<div class="main-container">
-    <div class="text-content">
-        <h3>Hi! I'm broadly interested in:</h3>
-        <ul>
-            <li>Simplicity and beauty</li>
-            <li>Understanding fundamental systems, especially physics, molecular biology, neuroscience, ghosts in the shell</li>
-            <li>Pathological visualisation</li>
-            <li>Algebraic topology, differential geometry, complex analysis and enumerative combinatorics</li>
-            <li>Solving physics with artificial scientists</li>
-            <li>Computational models of the mind</li>
-            <li>Modernist literature, especially <i>The Gift</i> and everything Nabokov wrote before <i>Ada</i></li>
-            <li>David Foster Wallace's essays (especially on tennis and <i>E Unibus Pluram</i>)</li>
-            <li>Building robust epistemics</li>
-            <li><i>Samurai Champloo</i> and <i>Vagabond</i></li>
-            <li>Bach's fugues</li>
-            <li>Decreasing pDoom</li>
-            <li>Shigaraki pottery</li>
-            <li>Rock gardens</li>
-            <li>Rinzai Zen</li>
-        </ul>
-        
-        <p>
-            If you have any suggestions for books, movies, or music you think I should check out or you just want to chat, email me - I want to meet as many cool people as possible, and I want to use my time on Earth to learn as much as I can.
-        </p>
-        
-        <div class="footnote">
-            ^ a brief attempt at decomposing my aesthetic preferences
-        </div>
-    </div>
-    
-    <div class="image-container">
-        <img src="images/cheshiresmile.png" alt="Cheshire smile">
-    </div>
+<div class="text-content">
+    <h3>Hi! I'm broadly interested in:</h3>
+    <ul>
+        <li>Simplicity and beauty</li>
+        <li>Understanding fundamental systems, especially physics, molecular biology, neuroscience, ghosts in the shell</li>
+        <li>Pathological visualisation</li>
+        <li>Algebraic topology, differential geometry, complex analysis and enumerative combinatorics</li>
+        <li>Solving physics with artificial scientists</li>
+        <li>Computational models of the mind</li>
+        <li>Modernist literature, especially <i>The Gift</i> and everything Nabokov wrote before <i>Ada</i></li>
+        <li>David Foster Wallace's essays (especially on tennis and <i>E Unibus Pluram</i>)</li>
+        <li>Building robust epistemics</li>
+        <li><i>Samurai Champloo</i> and <i>Vagabond</i></li>
+        <li>Bach's fugues</li>
+        <li>Decreasing pDoom</li>
+        <li>Shigaraki pottery</li>
+        <li>Rock gardens</li>
+        <li>Rinzai Zen</li>
+    </ul>
+    <p>
+        If you have any suggestions for books, movies, or music you think I should check out or you just want to chat, email me - I want to meet as many cool people as possible, and I want to use my time on Earth to learn as much as I can.
+    </p>
 </div>
+
+<div class="image-container">
+    <img src="images/cheshiresmile.png" alt="Cheshire smile">
+</div>
+<!-- You can include LaTeX examples here -->
 </body>
 </html>
