@@ -19,55 +19,38 @@ processEscapes: true
 <style>
 body {
     font-family: serif;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 2em auto;
     padding: 0 1em;
     line-height: 1.5;
 }
 .navigation {
     margin-bottom: 2em;
+    text-align: center;
 }
-h1, h3 {
+h3 {
     font-size: 1.8em;
     margin-bottom: 0.5em;
 }
-.content-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.text-content {
-    flex: 0 0 60%;
-    max-width: 60%;
-    padding-right: 20px;
-}
 .image-container {
-    flex: 0 0 35%;
-    max-width: 35%;
-    margin-top: 3em;
+    text-align: center;
+    margin: 2em auto;
+    max-width: 600px; /* Maintain original size */
 }
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.text-content {
+    margin-top: 2em;
 }
 ul {
-    padding-left: 15px; /* Further reduced from previous */
-    margin-right: 0;
+    padding-left: 25px;
 }
 li {
     margin-bottom: 5px;
-}
-@media (max-width: 768px) {
-    .content-container {
-        flex-direction: column;
-    }
-    .text-content, .image-container {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .image-container {
-        margin-top: 1em;
-    }
 }
 </style>
 </head>
@@ -80,34 +63,32 @@ li {
  [<a href="#contact">Contact</a>]
 </div>
 
-<div class="content-container">
-    <div class="text-content">
-        <h3>Hi! I'm broadly interested in:</h3>
-        <ul>
-            <li>Simplicity and beauty</li>
-            <li>Understanding fundamental systems, especially physics, molecular biology, neuroscience, ghosts in the shell</li>
-            <li>Pathological visualisation</li>
-            <li>Algebraic topology, differential geometry, complex analysis and enumerative combinatorics</li>
-            <li>Solving physics with artificial scientists</li>
-            <li>Computational models of the mind</li>
-            <li>Modernist literature, especially <i>The Gift</i> and everything Nabokov wrote before <i>Ada</i></li>
-            <li>David Foster Wallace's essays (especially on tennis and <i>E Unibus Pluram</i>)</li>
-            <li>Building robust epistemics</li>
-            <li><i>Samurai Champloo</i> and <i>Vagabond</i></li>
-            <li>Bach's fugues</li>
-            <li>Decreasing pDoom</li>
-            <li>Shigaraki pottery</li>
-            <li>Rock gardens</li>
-            <li>Rinzai Zen</li>
-        </ul>
-        <p>
-            If you have any suggestions for books, movies, or music you think I should check out or you just want to chat, email me - I want to meet as many cool people as possible, and I want to use my time on Earth to learn as much as I can.
-        </p>
-    </div>
-    
-    <div class="image-container">
-        <img src="images/cheshiresmile.png" alt="Cheshire smile">
-    </div>
+<div class="image-container">
+    <img src="images/cheshiresmile.png" alt="Cheshire smile">
+</div>
+
+<div class="text-content">
+    <h3>Hi! I'm broadly interested in:</h3>
+    <ul>
+        <li>Simplicity and beauty</li>
+        <li>Understanding fundamental systems, especially physics, molecular biology, neuroscience, ghosts in the shell</li>
+        <li>Pathological visualisation</li>
+        <li>Algebraic topology, differential geometry, complex analysis and enumerative combinatorics</li>
+        <li>Solving physics with artificial scientists</li>
+        <li>Computational models of the mind</li>
+        <li>Modernist literature, especially <i>The Gift</i> and everything Nabokov wrote before <i>Ada</i></li>
+        <li>David Foster Wallace's essays (especially on tennis and <i>E Unibus Pluram</i>)</li>
+        <li>Building robust epistemics</li>
+        <li><i>Samurai Champloo</i> and <i>Vagabond</i></li>
+        <li>Bach's fugues</li>
+        <li>Decreasing pDoom</li>
+        <li>Shigaraki pottery</li>
+        <li>Rock gardens</li>
+        <li>Rinzai Zen</li>
+    </ul>
+    <p>
+        If you have any suggestions for books, movies, or music you think I should check out or you just want to chat, email me - I want to meet as many cool people as possible, and I want to use my time on Earth to learn as much as I can.
+    </p>
 </div>
 <!-- You can include LaTeX examples here -->
 </body>
