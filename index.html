@@ -22,7 +22,7 @@ body {
     max-width: 1000px;
     margin: 2em auto;
     padding: 0 1em;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 .navigation {
     margin-bottom: 2em;
@@ -33,45 +33,53 @@ h3 {
 }
 .main-container {
     display: flex;
-    align-items: flex-start;
-    gap: 30px;
+    align-items: flex-end; /* Align items to bottom */
+    gap: 40px;
 }
 .text-content {
     flex: 1;
-    max-width: 65%;
+    /* No max-width here to allow the text to adjust based on image size */
 }
 .image-container {
     flex: 0 0 auto;
-    width: 35%;
-    margin-top: 50px; /* Align with content rather than heading */
+    /* No width constraints here to maintain original image size */
+    align-self: flex-end; /* Align to bottom */
+    margin-bottom: 30px; /* Space from bottom */
 }
 img {
-    max-width: 100%;
-    height: auto;
+    /* No max-width to ensure original size */
+    display: block;
+    width: auto; /* Ensures the image keeps its original width */
+    height: auto; /* Maintains aspect ratio */
 }
 ul {
     padding-left: 20px;
     margin-top: 20px;
 }
 li {
-    margin-bottom: 5px;
+    margin-bottom: 2px; /* Reduced from 5px */
     list-style-type: disc;
+    line-height: 1.3; /* Tighter line spacing */
+}
+p {
+    margin-top: 15px;
 }
 .contact-info {
-    margin-top: 20px;
-    font-style: italic;
+    margin-top: 15px;
 }
 .footnote {
     font-size: 0.9em;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
     }
-    .text-content, .image-container {
-        max-width: 100%;
-        width: 100%;
+    .image-container {
+        margin-top: 20px;
+    }
+    img {
+        max-width: 100%; /* Only constrain width on mobile */
     }
 }
 </style>
