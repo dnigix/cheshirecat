@@ -19,7 +19,7 @@ processEscapes: true
 <style>
 body {
     font-family: serif;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 2em auto;
     padding: 0 1em;
     line-height: 1.5;
@@ -34,14 +34,16 @@ h1, h3 {
 .content-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .text-content {
-    flex: 1;
-    min-width: 300px;
+    flex: 0 0 60%;
+    max-width: 60%;
     padding-right: 20px;
 }
 .image-container {
-    width: 300px;
+    flex: 0 0 35%;
+    max-width: 35%;
     margin-top: 3em;
 }
 img {
@@ -49,14 +51,21 @@ img {
     height: auto;
 }
 ul {
-    padding-left: 20px; /* Reduced from default */
+    padding-left: 15px; /* Further reduced from previous */
+    margin-right: 0;
+}
+li {
+    margin-bottom: 5px;
 }
 @media (max-width: 768px) {
     .content-container {
         flex-direction: column;
     }
+    .text-content, .image-container {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
     .image-container {
-        width: 100%;
         margin-top: 1em;
     }
 }
